@@ -3,4 +3,5 @@ Takes text and converts it to `:regional_indicator_X:` form, for use as emojis i
 To run:
 `python reg_ind.py "TEXT HERE"`
 
-Letters only. Numbers and special characters will either throw an error or will produce regional indicators that do not exist (yet). Caps and lowercase supported.
+Only letters are transformed, all other characters are left alone (spaces are doubled). Caps ignored. Messages will be reduced to 2000 characters (to fit into Discord text box). Pass optional third argument `false` to ignore this limitation:
+`python reg_ind.py "TEXT HERE" false`
