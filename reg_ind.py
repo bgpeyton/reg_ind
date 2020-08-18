@@ -22,4 +22,3 @@ if (len(msg) > 2000) and print2k: # cut to 2k and drop last letter (probably inc
     print("Formatted message:\n{}".format(msg[0:2000].rsplit(' ',1)[0]))
 else:
     print("Formatted message:\n{}".format(msg))
-    pass
